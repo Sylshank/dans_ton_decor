@@ -3,13 +3,13 @@ body {
 }
 
 nav {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
 
 h2 {
-    color: #2C3639;
+    color: #573e32;;
 }
 
 .navbar {
@@ -17,14 +17,14 @@ h2 {
 }
 
 .top-bar {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 24px;
     max-width: 80%;
     margin: 0 auto;
     margin-top: 75px;
-    background-color: #A27B5C;
+    background-color: #573e32;
 }
 
 .custom-collapse {
@@ -63,9 +63,12 @@ h2 {
     }
 }
 
+#a_propos    {
+    color: #573e32;
+}
+
 .pourquoi   {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
-    text-transform: uppercase;
+    font-family: "lora", 'Times New Roman', Times, serif;
     letter-spacing: 0.1rem;
     background-color: #DCD7C9;
     margin: 0 auto;
@@ -76,10 +79,13 @@ h2 {
 }
 
 .etapes {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
-        text-transform: uppercase;
+    font-family: "lora", 'Times New Roman', Times, serif;
         letter-spacing: 0.1rem;
-        color: #343434;
+        color: #573e32;
+}
+
+.etapes-titre   {
+    text-transform: uppercase;
 }
 
 .feature  {
@@ -89,15 +95,15 @@ h2 {
 .etapes-text {
     font-size: 24px;
     padding-top: 20px;
+    
 }
 
 .pieces {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
-    text-transform: uppercase;
+    font-family: "lora", 'Times New Roman', Times, serif;
     letter-spacing: 0.1rem;
     background-color: #DCD7C9;
     margin: 0 auto;
-    color: #343434;
+    color: #573e32;
 }
 
 .piece-title {
@@ -107,15 +113,16 @@ h2 {
 /* Pricing */
 
 .forfait {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
         letter-spacing: 0.1rem;
         margin: 0 auto;
-        color: #A27B5C;
+        color: #573e32;
         padding-bottom: 20px;
 }
 
 .forfait-title {
     text-transform: uppercase;
+    color: 573e32;
     padding-top: 20px;
 }
 
@@ -131,7 +138,7 @@ h2 {
 }
 
 .feature-list li {
-    color: #3f4e4f;
+    color: #573e32;
     text-transform: uppercase;
     font-size: small;
 }
@@ -144,16 +151,16 @@ h2 {
 }
 
 .gradient-custom {
-    background: linear-gradient(135deg, #a27b5c 0%, #7b5f48 100%);
+    background: linear-gradient(135deg, #573e32 50%, #573e32 100%);
 }
 
 .subtitle {
     text-transform: uppercase;
-    color: #7b5f48;
+    color: #573e32;
 }
 
 .card-title {
-    color: #2c3639;
+    color: #573e32;
 }
 
 .card-body {
@@ -212,7 +219,7 @@ button.btn {
  #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category,
  #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category,
  #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
      font-size: 1.00rem;
      font-weight: 600;
      text-transform: uppercase;
@@ -237,10 +244,9 @@ button.btn {
    
 
 .project-name {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
     font-size: 1.00rem;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 .contact-box{
@@ -248,17 +254,17 @@ button.btn {
 }
 
 #contact {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
     margin-top: 25px;
     margin-bottom: 100px;
 }
 
 .contact-title {
-    color: #A27B5C;
+    color: #573e32;
 }
 
 footer {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
     background-color: #DCD7C9;
     padding-bottom: 10px;
 }
@@ -270,8 +276,7 @@ footer {
 /* QUESTIONNAIRE PAGE */
 
 .questionnaire {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
-    text-transform: uppercase;
+    font-family: "lora", 'Times New Roman', Times, serif;
     letter-spacing: 0.1rem;
     margin: 0 auto;
 }
@@ -286,13 +291,13 @@ footer {
 }
 
 #question {
-    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    font-family: "lora", 'Times New Roman', Times, serif;
     margin-top: 25px;
     margin-bottom: 100px;
 }
 
 .question-title {
-    color: #A27B5C;
+    color: #573e32;
     text-transform: uppercase;
 }
 
@@ -300,8 +305,4 @@ footer {
     border-top: 2px solid;
 }
 
-label  {
-    font-weight: bold;
-    text-transform: uppercase;
-}
 

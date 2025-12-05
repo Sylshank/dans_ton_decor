@@ -1,0 +1,327 @@
+/* Base styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Header */
+header {
+    font-family: "the-seasons", 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* Consultation banner */
+.consult_header {
+    background-color: #343434;
+    color: white;
+    font-size: 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+    border-top: 10px solid white;
+}
+
+/* Navigation container */
+.nav-container {
+    background-color: white;
+    opacity: 0.9;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.dans_ton_decor_logo {
+    height: 100px;
+    margin-left: 50px;
+}
+
+
+.list-menu {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.list-menu li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.list-menu li a {
+    color: #343434;
+    text-decoration: none;
+}
+
+.contact {
+    border: 1px solid #343434;
+    padding: 10px 25px;
+}
+
+/* -----------------------------------------
+   MOBILE & TABLET (where the hamburger lives)
+   ----------------------------------------- */
+
+/* Hide checkbox off-screen */
+.nav-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Hamburger icon */
+.nav-toggle-label {
+    display: none;
+    /* only on mobile/tablet */
+    margin-top: 10px;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    /* above the menu */
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    display: block;
+    background: #343434;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.nav-toggle-label span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-toggle-label span::before {
+    top: -8px;
+}
+
+.nav-toggle-label span::after {
+    top: 8px;
+}
+
+/* Tablet landscape & small desktops */
+@media (max-width: 1365px) {
+
+    .consult_header,
+    .nav-container {
+        width: 100vw;
+        margin: -10px;
+    }
+
+    .dans_ton_decor_logo {
+        height: 90px;
+        margin-left: 40px;
+    }
+
+    .list-menu {
+        padding-right: 70px;
+    }
+
+    .consult_header {
+        font-size: 20px;
+    }
+}
+
+/* Tablet portrait & mobile menu behavior */
+@media (max-width: 1024px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    .dans_ton_decor_logo {
+        margin-left: 0;
+    }
+
+    .list-menu {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .list-menu li {
+        margin: 0.5rem 0;
+    }
+
+    /* show hamburger */
+    .nav-toggle-label {
+        display: block;
+    }
+
+    /* hide menu by default */
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background: white;
+        opacity: 0.95;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 1;
+    }
+
+    /* reveal menu when checkbox is checked */
+    .nav-toggle:checked~.nav-menu {
+        max-height: 300px;
+        /* adjust based on number of links */
+    }
+
+    .nav-menu .list-menu {
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    .list-menu li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+}
+
+/* Phone-specific tweaks */
+@media (max-width: 767px) {
+    .consult_header {
+        font-size: 16px;
+        height: auto;
+        padding: 0.75rem;
+    }
+
+    .nav-container {
+        padding: 0.5rem;
+    }
+
+    .dans_ton_decor_logo {
+        height: 80px;
+    }
+
+    .list-menu li a {
+        font-size: 14px;
+    }
+
+    .contact {
+        padding: 8px 16px;
+    }
+}
+
+/* -----------------------
+   HEADER GALLERY SECTION
+-------------------------- */
+
+.gallery {
+    width: 80vw;
+    /* 80% of viewport width */
+    margin: 0 auto;
+    /* center horizontally */
+    display: flex;
+    /* lay children side by side */
+    gap: 16px;
+    /* gutter between images */
+}
+
+.gallery img {
+    flex: 1 1 0;
+    /* each takes equal share */
+    max-width: calc((100% - 2 * 16px) / 3);
+    /* ensure three images plus two gutters exactly fill 100% of the .gallery */
+    height: 500px;
+    /* preserve aspect ratio */
+    display: block;
+    /* remove bottom whitespace */
+    object-fit: cover;
+}
+
+@media (max-width: 1365px) {
+    .gallery {
+            width: 100vw;
+            /* 80% of viewport width */
+            margin: 0 auto;
+            /* center horizontally */
+            display: flex;
+            /* lay children side by side */
+            gap: 16px;
+            /* gutter between images */   }
+}
+
+/* --- Responsive breakpoint @ 1024px --- */
+@media (max-width: 1024px) {
+    .gallery {
+        flex-direction: column;
+        /* stack them vertically */
+    }
+
+    .gallery img {
+        max-width: 100%;
+        /* each takes full width */
+    } }
+
+/* --- main section --- */
+
+.pourquoi   {
+    padding-top: 20px;
+}
+
+.decor_title    {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.decor_subtitle {
+    font-size: 30px;
+    text-align: center;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0;
+}
+
+.why {
+    font-size: 48px;
+    text-align: center;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    margin-top: 0;
+}
+
+.decor_text {
+    font-size: 24px;
+    text-align: center;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 70%;
+    margin: auto;;
+}
